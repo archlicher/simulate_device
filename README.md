@@ -1,1 +1,2 @@
 - [simulate device](docs/simulate-device.md)
+  - [simulate](docs/simulate-device.md#simulate)
