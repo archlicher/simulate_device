@@ -16,7 +16,7 @@ class Responser
 			params[p] = read_line(p, DISPLAY_PARAMS_PATTERNS[p], PARAMS_PATTERNS[p], true)
 		end
 
-		return params
+		params
 	end
 
 	def response(params={})
@@ -38,7 +38,7 @@ class Responser
 		keep_alive += '?eth=' + @device.eth.to_s
 		keep_alive += '?ppp=' + @device.ppp.to_s
 		keep_alive += '?link_status=' + @device.link_status.to_s
-		return keep_alive
+		keep_alive
 	end
 
 	def mondisd_stat

@@ -19,6 +19,6 @@ class Simulate_Device
 
   def json_gzip
     @file_att_warn = File.read("imports/att_vals.json")
-    return Zlib::Deflate.deflate(@file_att_warn)
+    Zlib::Deflate.deflate(@file_att_warn)
   end
 end
